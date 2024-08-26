@@ -1,0 +1,45 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1721613264
+::res://Assets/::1720365896
+Made by Hazim Jamal.png::CompressedTexture2D::8816588782385061324::1720365890::1720365896::1::::<><>::
+::res://Assets/Fonts/::1719241419
+PixelOperator8.ttf::FontFile::6576830417759189867::1719239579::1719239593::1::::<><>::
+::res://Assets/sprites/::1719757313
+chinese_woman.png::CompressedTexture2D::1471323902635539012::1718339541::1719040033::1::::<><>::
+coin.png::CompressedTexture2D::1136708652315875528::1719241407::1719241421::1::::<><>::
+In & Out.png::CompressedTexture2D::5367580138084161514::1719214706::1719214707::1::::<><>::
+knight.png::CompressedTexture2D::3502993162744862267::1719031887::1719031921::1::::<><>::
+Text Box_In&Out.png::CompressedTexture2D::7309174836754611699::1719757306::1719757313::1::::<><>::
+Textbox.png::CompressedTexture2D::8271856475774448474::1717386506::1719040044::1::::<><>::
+::res://Defaults/::1719037221
+icon.svg::CompressedTexture2D::4891464967807168540::1716106750::1719037221::1::::<><>::
+::res://Interaction/::1719801347
+::res://Interaction/Interaction Area/::1719801347
+InteractionManager.tscn::PackedScene::288589920022732851::1719801339::0::1::::<><>::res://Scripts/InteractionManager.gd
+interaction_area.tscn::PackedScene::2939293156252010357::1719801341::0::1::::<><>::res://Scripts/interaction_area.gd
+::res://Scenes/::1721229698
+Coin2.gd::GDScript::-1::1720491723::0::1::::<>Area2D<>::
+Coin3.gd::GDScript::-1::1720491817::0::1::::<>Area2D<>::
+Coin4.gd::GDScript::-1::1720491817::0::1::::<>Area2D<>::
+Coin.tscn::PackedScene::625523567771899009::1721229697::0::1::::<><>::res://Scripts/Coin.gd<>uid://qgvop2bldiwu::::res://Assets/sprites/coin.png
+Game.tscn::PackedScene::7688345685663466015::1721229697::0::1::::<><>::uid://c77k8nlychtb5::::res://Scenes/Player.tscn<>uid://pfkn7dcvycbd::::res://Scenes/Teacher.tscn<>res://Scripts/Player.gd<>uid://ciqdi4lav381c::::res://Assets/sprites/In & Out.png<>res://Scripts/Self-Awareness Rate.gd<>uid://c0x4o3ehrdb0n::::res://Assets/Fonts/PixelOperator8.ttf<>uid://i6ajtyy24ljl::::res://Scenes/Coin.tscn<>res://Scenes/Coin2.gd<>res://Scenes/Coin3.gd<>res://Scenes/Coin4.gd
+Intro.gd::GDScript::-1::1720366980::0::1::::<>Node2D<>::
+Intro.tscn::PackedScene::5985466761107323586::1721229698::0::1::::<><>::res://Scenes/Intro.gd<>uid://dxu26ucmyeexo::::res://Assets/Made by Hazim Jamal.png
+Main_Menu.tscn::PackedScene::4250789295369017253::1721229698::0::1::::<><>::
+Player.tscn::PackedScene::7085611253949497892::1721229697::0::1::::<><>::uid://bp541yfdfh8tj::::res://Assets/sprites/knight.png
+progress_bar.tscn::PackedScene::7504969740278471484::1719203508::0::1::::<><>::res://Scripts/progress_bar.gd
+Quiz.gd::GDScript::-1::1720493697::0::1::::<>Control<>::
+Quiz.tscn::PackedScene::2286511892669462407::1721229697::0::1::::<><>::uid://dp37jdmv1snkc::::res://Assets/sprites/Textbox.png<>res://Scenes/Quiz.gd
+Teacher.tscn::PackedScene::1063786614090710333::1721229697::0::1::::<><>::res://Scripts/Teacher.gd<>uid://u7yqwdxrgrt1::::res://Assets/sprites/chinese_woman.png<>res://Scripts/interaction_area.gd
+Text_Box.tscn::PackedScene::158008318155471836::1719203508::0::1::::<><>::res://Scripts/Text_Box.gd<>uid://dp37jdmv1snkc::::res://Assets/sprites/Textbox.png
+::res://Scripts/::1720422063
+Coin.gd::GDScript::-1::1720420530::0::1::::<>Area2D<>::
+DialogueManager.gd::GDScript::-1::1718975773::0::1::::<>Node<>::
+InteractionManager.gd::GDScript::-1::1719212295::0::1::::<>Node2D<>::
+interaction_area.gd::GDScript::-1::1720422063::0::1::::InteractionArea<>Area2D<>::
+Player.gd::GDScript::-1::1719133803::0::1::::<>CharacterBody2D<>::
+progress_bar.gd::GDScript::-1::1719242411::0::1::::<>ProgressBar<>::
+Questions.json::JSON::-1::1719901486::0::1::::<><>::
+Self-Awareness Rate.gd::GDScript::-1::1719242181::0::1::::<>Node<>::
+Teacher.gd::GDScript::-1::1719245344::0::1::::<>Node2D<>::
+Text_Box.gd::GDScript::-1::1718975318::0::1::::<>MarginContainer<>::

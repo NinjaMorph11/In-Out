@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://7turtowckp2f"]
+
+[ext_resource type="Texture2D" uid="uid://dp37jdmv1snkc" path="res://Assets/sprites/Textbox.png" id="1_d1aia"]
+[ext_resource type="Script" path="res://Scenes/Quiz.gd" id="1_ywltw"]
+
+[node name="Quiz" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ywltw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_d1aia")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 20.0
+offset_right = 1112.0
+offset_bottom = 538.0
+
+[node name="QuizLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+autowrap_mode = 2
+
+[node name="ItemList" type="ItemList" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+item_count = 3
+same_column_width = true
+item_0/text = "Item 1"
+item_1/text = "Item 2"
+item_2/text = "Item 3"
+
+[connection signal="item_selected" from="VBoxContainer/ItemList" to="." method="_on_item_list_item_selected"]

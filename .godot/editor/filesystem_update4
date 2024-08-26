@@ -1,0 +1,8 @@
+res://Scenes/Game.tscn
+res://Scenes/Coin.tscn
+res://Scenes/Teacher.tscn
+res://Scenes/Player.tscn
+res://Scenes/Quiz.tscn
+res://Scenes/Main_Menu.tscn
+res://Scenes/Intro.tscn
+res://Scenes/Coin2.gd

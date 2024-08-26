@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://pfkn7dcvycbd"]
+
+[ext_resource type="Script" path="res://Scripts/Teacher.gd" id="1_ssrv0"]
+[ext_resource type="Texture2D" uid="uid://u7yqwdxrgrt1" path="res://Assets/sprites/chinese_woman.png" id="2_oijah"]
+[ext_resource type="Script" path="res://Scripts/interaction_area.gd" id="2_rgyd8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lywi0"]
+atlas = ExtResource("2_oijah")
+region = Rect2(98, 0, 98, 127)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2qf1"]
+atlas = ExtResource("2_oijah")
+region = Rect2(0, 0, 98, 127)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w6a5y"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lywi0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2qf1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.5
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mdbpe"]
+radius = 53.3223
+
+[node name="Teacher" type="Node2D"]
+skew = 0.0174533
+script = ExtResource("1_ssrv0")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -157.82
+offset_top = -47.0072
+offset_right = -6.82039
+offset_bottom = -24.0072
+text = "Press [E] to interact"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2.27374e-13, -1.78814e-07)
+scale = Vector2(0.306122, 0.306122)
+sprite_frames = SubResource("SpriteFrames_w6a5y")
+frame_progress = 0.375528
+flip_h = true
+metadata/_edit_lock_ = true
+
+[node name="InteractionArea" type="Area2D" parent="."]
+visible = false
+collision_mask = 2
+script = ExtResource("2_rgyd8")
+action_name = "Talk"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_mdbpe")
+metadata/_edit_lock_ = true
+
+[connection signal="body_entered" from="InteractionArea" to="InteractionArea" method="_on_body_entered"]
+[connection signal="body_exited" from="InteractionArea" to="InteractionArea" method="_on_body_exited"]

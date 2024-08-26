@@ -1,0 +1,14 @@
+[ 
+
+{
+	"questions": "Why am I doing this, is a question that can be positive by replacing it with What",
+	"options": ["Yes","No"],
+	"correctOptionIndex": 0
+}
+,
+{
+	"questions": "Why am I doing this, is a question that can be positive by replacing it with What",
+	"options": ["Yes","No"],
+	"correctOptionIndex": 2
+}
+]

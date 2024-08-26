@@ -1,0 +1,15 @@
+AnimationPlayer
+AnimationTree
+ColorRect
+Sprite2D
+Node2D
+MarginContainer
+VBoxContainer
+ItemList
+Label
+TextureRect
+Control
+Node
+ProgressBar
+InteractionArea
+Camera2D
